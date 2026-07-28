@@ -25,7 +25,7 @@ jobs:
         flutter-version: '3.19.0'
 
     - name: Generate Android Native Files
-      run: flutter create . --platforms=android --project-name=its_dark_community --force
+      run: flutter create . --platforms=android --project-name=its_dark_community --overwrite
 
     - name: Install Dependencies
       run: flutter pub get
