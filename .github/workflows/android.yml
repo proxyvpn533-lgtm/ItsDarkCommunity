@@ -24,11 +24,11 @@ jobs:
       with:
         flutter-version: '3.19.0'
 
+    - name: Generate Android Native Files
+      run: flutter create . --platforms=android --project-name=its_dark_community --force
+
     - name: Install Dependencies
       run: flutter pub get
-
-    - name: Generate Android Native Files
-      run: flutter create . --platforms=android
 
     - name: Build APK
       run: flutter build apk --release --no-tree-shake-icons
